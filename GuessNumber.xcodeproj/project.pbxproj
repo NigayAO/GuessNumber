@@ -11,6 +11,8 @@
 		1D5AEBF127A82E3C00ED482A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5AEBF027A82E3C00ED482A /* ContentView.swift */; };
 		1D5AEBF327A82E3D00ED482A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D5AEBF227A82E3D00ED482A /* Assets.xcassets */; };
 		1D5AEBF627A82E3D00ED482A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D5AEBF527A82E3D00ED482A /* Preview Assets.xcassets */; };
+		1D5AEBFD27A830B800ED482A /* CustomSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5AEBFC27A830B800ED482A /* CustomSlider.swift */; };
+		1D5AEC1F27A83B7400ED482A /* SliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5AEC1E27A83B7400ED482A /* SliderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		1D5AEBF027A82E3C00ED482A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1D5AEBF227A82E3D00ED482A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D5AEBF527A82E3D00ED482A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1D5AEBFC27A830B800ED482A /* CustomSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSlider.swift; sourceTree = "<group>"; };
+		1D5AEC1E27A83B7400ED482A /* SliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,8 @@
 			children = (
 				1D5AEBEE27A82E3C00ED482A /* GuessNumberApp.swift */,
 				1D5AEBF027A82E3C00ED482A /* ContentView.swift */,
+				1D5AEC1E27A83B7400ED482A /* SliderView.swift */,
+				1D5AEBFC27A830B800ED482A /* CustomSlider.swift */,
 				1D5AEBF227A82E3D00ED482A /* Assets.xcassets */,
 				1D5AEBF427A82E3D00ED482A /* Preview Content */,
 			);
@@ -137,6 +143,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D5AEBFD27A830B800ED482A /* CustomSlider.swift in Sources */,
+				1D5AEC1F27A83B7400ED482A /* SliderView.swift in Sources */,
 				1D5AEBF127A82E3C00ED482A /* ContentView.swift in Sources */,
 				1D5AEBEF27A82E3C00ED482A /* GuessNumberApp.swift in Sources */,
 			);
