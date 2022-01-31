@@ -17,13 +17,17 @@ struct ContentView: View {
     var body: some View {
         VStack {
             Text("Передвиньте слайдер как можно ближе к: \(targetValue)")
-                .font(.system(size: 17))
+                .font(.system(size: 14))
             
             SliderView(value: $currentValue, target: $targetValue, score: computeScore())
                 .padding()
             
             ButtonView(title: "Проверь меня!", action: { alertPresent = true } )
-                .alert("You record is \(computeScore())", isPresented: $alertPresent, actions: {})
+                .alert(
+                    "Your Score \n \(computeScore())",
+                    isPresented: $alertPresent,
+                    actions: {}
+                )
                 .padding()
             
             ButtonView(title: "Начать заново") {

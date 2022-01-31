@@ -8,9 +8,12 @@
 import SwiftUI
 
 struct SliderView: View {
+    
     @Binding var value: Double
     @Binding var target: Int
+    
     var score: Int
+    
     var body: some View {
         HStack {
             Text("0")
@@ -22,6 +25,10 @@ struct SliderView: View {
 
 struct SliderView_Previews: PreviewProvider {
     static var previews: some View {
-        SliderView(value: .constant(40), target: .constant(60), score: 90)
+        SliderView(
+            value: .constant(40),
+            target: .constant(60),
+            score: 90
+        )
     }
 }
