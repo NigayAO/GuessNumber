@@ -19,21 +19,22 @@ struct ContentView: View {
             Text("Передвиньте слайдер как можно ближе к: \(targetValue)")
                 .font(.system(size: 14))
             
-            SliderView(value: $currentValue, target: $targetValue, score: computeScore())
-                .padding()
+            SliderView(
+                value: $currentValue,
+                target: $targetValue,
+                score: computeScore()
+            ).padding()
             
             ButtonView(title: "Проверь меня!", action: { alertPresent = true } )
                 .alert(
                     "Your Score \n \(computeScore())",
                     isPresented: $alertPresent,
                     actions: {}
-                )
-                .padding()
+                ).padding()
             
             ButtonView(title: "Начать заново") {
                 targetValue = Int.random(in: 0...100)
-            }
-            .padding()
+            }.padding()
         }
     }
     
@@ -47,7 +48,6 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             ContentView()
-                .previewDevice("iPhone 12")
         }
     }
 }

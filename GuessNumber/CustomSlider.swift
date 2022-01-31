@@ -11,6 +11,7 @@ struct CustomSlider: UIViewRepresentable {
     
     @Binding var value: Double
     @Binding var target: Int
+    
     var score: Int
     
     func makeUIView(context: Context) -> UISlider {
