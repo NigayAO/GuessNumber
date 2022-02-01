@@ -10,9 +10,8 @@ import SwiftUI
 struct CustomSlider: UIViewRepresentable {
     
     @Binding var value: Double
-    @Binding var target: Int
     
-    var score: Int
+    var alpha: Int
     
     func makeUIView(context: Context) -> UISlider {
         let slider = UISlider()
@@ -30,9 +29,12 @@ struct CustomSlider: UIViewRepresentable {
     
     func updateUIView(_ uiView: UISlider, context: Context) {
         uiView.value = Float(value)
-        let alpha = CGFloat(score) / 100
+        let alpha = CGFloat(alpha) / 100
         uiView.thumbTintColor = UIColor(
-            red: 1, green: 0, blue: 0, alpha: alpha
+            red: 1,
+            green: 0,
+            blue: 0,
+            alpha: alpha
         )
     }
     
@@ -43,7 +45,7 @@ struct CustomSlider: UIViewRepresentable {
 
 struct CustomSlider_Previews: PreviewProvider {
     static var previews: some View {
-        CustomSlider(value: .constant(45), target: .constant(10), score: 10)
+        CustomSlider(value: .constant(45), alpha: 10)
     }
 }
 

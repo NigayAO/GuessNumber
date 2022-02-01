@@ -21,8 +21,7 @@ struct ContentView: View {
             
             SliderView(
                 value: $currentValue,
-                target: $targetValue,
-                score: computeScore()
+                alpha: computeScore()
             ).padding()
             
             ButtonView(title: "Проверь меня!", action: { alertPresent = true } )
